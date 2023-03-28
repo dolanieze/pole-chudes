@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5 задание - Поле чудес</title>
+	<style type="text/css">
+		/* Главный див */
+		.container {
+			width: 600px;
+		}
+		/* класс для правильной буквы 1 */
+		.letter1 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 2 */
+		.letter2 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 3 */
+		.letter3 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 4 */
+		.letter4 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 5 */
+		.letter5 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 6 */
+		.letter6 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* авт. отступы */
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/* DISPLAY FLEX */
+		.d-flex {
+			display: flex;
+		}
+		/* ШРИФТ Arial */
+		.ff-arial {
+			font-family: Arial;
+		}
+		/* фон светло-серый, почти белый */
+		.bg-light {
+			background-color: #f8f9fa;
+		}
+		/* фон желтый */
+		.bg-warning {
+			background-color: #ffc107;
+		}
+		/* ведущий Якубович */
+		.yakubovich {
+			background-image: url(1.png);
+			background-size: 100% 100%;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 0px;
+			top: 400px;
+		}
+	</style>
+</head>
+<body class="ff-arial">
+	<!-- Вопрос -->
+	<div class="bg-warning container mx-auto">
+		Этот струнный инструмент используют во многих стилях и направлениях музыки. Значительный вклад в музыкальную индустрию этот инструмент внес к середине 20 века.
+	</div>
+	<!-- Главный див -->
+	<div class="container mx-auto d-flex bg-light">
+		<div class="letter1">
+			<h1>d</h1>
+		</div>
+		<div class="letter2">
+			<h1>o</h1>
+		</div>
+		<div class="letter3">
+			<h1>l</h1>
+		</div>
+		<div class="letter4">
+			<h1>a</h1>
+		</div>
+		<div class="letter5">
+			<h1>n</h1>
+		</div>
+		
+	</div>
+	<!-- Добавьте классы для букв сами -->
+	<span class="a">A</span>
+	<span class="loh">Б</span>
+	<span class="loh">В</span>
+	<span  class="loh">Г</span>
+	<span class="d">Д</span>		
+	<span class="loh">Е</span>	
+	<span class="loh">Ё</span>
+	<span class="loh">Ж</span>
+	<span class="loh">З</span>
+	<span class="loh">И</span>
+	<span class="loh">Й</span>
+	<span class="loh">К</span>
+	<span class="l">Л</span>
+	<span class="loh">М</span>
+	<span class="n">Н</span>
+	<span class="o">О</span>
+	<span class="loh">П</span>
+	<span class="loh">Р</span>
+	<span class="loh">С</span>
+	<span class="loh">Т</span>
+	<span class="loh">У</span>
+	<span class="loh">Ф</span>
+	<span class="loh">Х</span>
+	<span class="loh">Ц</span>
+	<span class="loh">Ч</span>
+	<span class="loh">Ш</span>
+	<span class="loh">Щ</span>
+	<span class="loh">Ъ</span>
+	<span  class="loh">Ы</span>
+	<span class="loh">Ь</span>
+	<span class="loh">Э</span>
+	<span class="loh">Ю</span>
+	<span class="loh">Я</span>
+	<!-- ведущий -->
+	<div class="yakubovich">
+	</div>
+	<script type="text/javascript">
+		/* Создай игру "Поле чудес".
+		1. Когда кликаешь на правильную букву алфавита, то открывается буква в слове.
+		2. Когда кликаешь на неправильную букву алфавита, то выходит всплывающее окно 'Неверно!'.
+		Вначале сделай, так чтобы работали клики на правильные буквы. Потом сделай, так чтобы работали клики на 1-2 неправильные буквы. На все 33 буквы алфавита, можно не делать. */
+		let a = document.querySelector('.letter4')
+		let n = document.querySelector('.letter5')
+		let d = document.querySelector('.letter1')
+		let o = document.querySelector('.letter2')
+		let l = document.querySelector('.letter3')
+		let loh = document.querySelectorAll('.loh')
+		
+		document.querySelector('.d').onclick=function(){
+			d.style.background = 'yellow'
+		}
+		document.querySelector('.o').onclick=function(){
+			o.style.background = 'yellow'
+		}
+		document.querySelector('.l').onclick=function(){
+			l.style.background = 'yellow'
+		}
+		document.querySelector('.a').onclick=function(){
+			a.style.background = 'yellow'
+		}
+		document.querySelector('.n').onclick=function(){
+			n.style.background = 'yellow'
+		}
+		
+		for(let i = 0; i < 28; i = i + 1 ){
+			loh[i].onclick=function(){
+				alert("ti loh hahahhahag")
+			}
+		}
+	</script>
+</body>
+</html>
